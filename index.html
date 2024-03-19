@@ -26,7 +26,10 @@
 
   <!-- scrivere tutto il codice dentro a app -->
   <div id="app">
-
+    <button @click="getApis">Carica Email</button>
+    <ul>
+      <li v-for="(email, index) in emails" :key="index">{{ email }}</li>
+    </ul>
   </div>
 
   <script src="js/script.js"></script>
